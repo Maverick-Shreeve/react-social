@@ -1,28 +1,30 @@
-import "./login.scss";
+import "./register.scss";
 
-const Login = () => {
+const Register = () => {
   return (
-    <div className="login">
+    <div className="register">
       <div className="card">
         <div className="left">
-          <h1>hello world</h1>
-          <p>
-            gfiksdjgisghisghishgiushgiursdhgisuhgisughisughiursfhgisuhgisuhgisuhg
-            uhsgbujhwsgbgujshbggsujhgs
-          </p>
-          <span>no account?</span>
-          <button>Register</button>
+          <h1>Lama Social.</h1>
+          <p>gjrfdkfbgjhdrbgjdhbgjdrhbgjdrhgbjdrhgburdhgbudrhgburdb</p>
+          <span>Do you have an account?</span>
+          <Link to="/login">
+            <button>Login</button>
+          </Link>
         </div>
-        <div className="right"></div>
-        <h1>Login</h1>
-        <form>
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
-          <button>Login</button>
-        </form>
+        <div className="right">
+          <h1>Register</h1>
+          <form>
+            <input type="text" placeholder="Username" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <input type="text" placeholder="Name" />
+            <button>Register</button>
+          </form>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Register;
